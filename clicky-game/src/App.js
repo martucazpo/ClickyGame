@@ -4,6 +4,7 @@ import Wrapper from "./components/Wrapper";
 import Title from "./components/Title";
 import friends from "./friends.json";
 
+
 class App extends Component {
   // Setting this.state.friends to the friends json array
   state = {
@@ -16,6 +17,7 @@ class App extends Component {
     // Set this.state.friends equal to the new friends array
     this.setState({ friends });
   };
+
 
   // Map over this.state.friends and render a FriendCard component for each friend object
   render() {
