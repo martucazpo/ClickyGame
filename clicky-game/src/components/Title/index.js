@@ -1,5 +1,4 @@
 import React from "react";
-import Counter from "../Counter/index";
 import "./style.css";
 
 function Title(props) {
@@ -7,7 +6,8 @@ function Title(props) {
     <div className="jumbotron jumbotron-fluid">
   <div className="container">
     <h1 className="title">{props.children}</h1>
-    <p className="lead"><Counter/></p>
+    <p className="lead">Click on each image - but only once!</p>
+    <p className = "count"><strong>Count: {props.count} | Wins: {props.wins} Losses: {props.losses}</strong></p>
   </div>
 </div>
 )};
