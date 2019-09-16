@@ -29,7 +29,7 @@ class App extends Component {
         count: this.state.count + 1,
       });
     }
-    if (this.state.clickedArray[10]) {
+    if (this.state.clickedArray[10] && this.state.clickedArray.includes(id) === false){
       this.setState({ wins: this.state.wins + 1, count : 0, clickedArray : [] });
     }
   
